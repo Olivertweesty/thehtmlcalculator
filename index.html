@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>The Calculator</title>
+    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css">
+  	<link rel="stylesheet" type="text/css" href="style.css">
+  	<script src="jquery-3.1.1.js"></script>
+  	<script src="myscript.js"></script>
+  </head>
+  <body>
+    <!-- header -->
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-12 jumbotron text-center">
+            <h1>The HTML Calculator<br><small>By FakeJoker</small></h1>
+        </div>
+      </div>
+    </div>
+    <!-- end of header -->
+    <!-- body middle begins -->
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-3">
+
+        </div>
+        <div class="col-md-6">
+          <div class="panel panel-info">
+            <div class="panel-heading"><p class="text-center">Casio-342</p></div>
+            <div class="panel-body">
+                <!-- screen -->
+                <div class="row">
+              		<div class="col-md-12">
+              			<div class="row well" style="height: 13vh;">
+              		   <h1 id="scr"></h1>
+              		   </div>
+              		</div>
+              	</div>
+                <!-- end of screen -->
+
+                <!-- start of buttons -->
+              <div class="background-primary">
+                <div class="row">
+                  <div class="col-xs-3" id="rbtn"><button class="btn btn-primary mybtn" id="seven" onclick="fClear()">Clear</button></div>
+                  <div class="col-xs-3" id="rbtn"><button class="btn btn-primary mybtn" id="eight" onclick="bSqrt()">Square Root</button></div>
+                  <div class="col-xs-3" id="rbtn"><button class="btn btn-primary mybtn" id="nine" onclick="fSquare()">Square</button></div>
+                  <div class="col-xs-3" id="rbtn"><button class="btn btn-primary mybtn" id="cube" onclick="bCube()">Cube</button></div>
+                </div>
+
+                <div class="row">
+              		<div class="col-xs-3" id="rbtn"><button class="btn btn-primary mybtn" id="seven" onclick="fSeven()">7</button></div>
+              		<div class="col-xs-3" id="rbtn"><button class="btn btn-primary mybtn" id="eight" onclick="fEight()">8</button></div>
+              		<div class="col-xs-3" id="rbtn"><button class="btn btn-primary mybtn" id="nine" onclick="fNine()">9</button></div>
+              		<div class="col-xs-3" id="rbtn"><button class="btn btn-primary mybtn" id="sub" onclick="fSub()">-</button></div>
+              	</div>
+
+                <div class="row">
+              		<div class="col-xs-3" id="rbtn"><button class="btn btn-primary mybtn" id="four" onclick="fFour()">4</button></div>
+              		<div class="col-xs-3" id="rbtn"><button class="btn btn-primary mybtn" id="five" onclick="fFive()">5</button></div>
+              		<div class="col-xs-3" id="rbtn"><button class="btn btn-primary mybtn" id="six" onclick="fSix()">6</button></div>
+              		<div class="col-xs-3" id="rbtn"><button class="btn btn-primary mybtn" id="plus" onclick="fPlus()">+</button></div>
+              	</div>
+
+                <div class="row" id="row1">
+              		<div class="col-xs-3" id="rbtn"><button class="btn btn-primary mybtn" id="one" onclick="fOne()">1</button></div>
+              		<div class="col-xs-3" id="rbtn"><button class="btn btn-primary mybtn" id="two" onclick="fTwo()">2</button></div>
+              		<div class="col-xs-3" id="rbtn"><button class="btn btn-primary mybtn" id="three" onclick="fThree()">3</button></div>
+              		<div class="col-xs-3" id="rbtn"><button class="btn btn-primary mybtn" id="mult" onclick="fMult()">X</button></div>
+              	</div>
+
+                <div class="row">
+              		<div class="col-xs-3" id="rbtn"><button class="btn btn-primary mybtn" id="point" onclick="fPoint()">.</button></div>
+              		<div class="col-xs-3" id="rbtn"><button class="btn btn-primary mybtn" id="zero" onclick="fZero()">0</button></div>
+              		<div class="col-xs-3" id="rbtn"><button class="btn btn-primary mybtn" id="slashd" onclick="fDiv()">/</button></div>
+              		<div class="col-xs-3" id="rbtn"><button class="btn btn-primary mybtn" id="eq" onclick="fEqual()">=</button></div>
+              	</div>
+              </div>
+                <!-- end of buttons -->
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+
+        </div>
+      </div>
+    </div>
+    <!-- end of body middle -->
+    <script type="text/javascript">
+    	$(document).ready(function(){
+    		$(".btn").click(function(){
+    			$("#scr").text(cont);
+    		});
+    	});
+    </script>
+  </body>
+</html>
